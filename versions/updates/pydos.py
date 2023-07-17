@@ -54,5 +54,8 @@ while True:
         if c == 'update':
             os.system('python updater/update.py')
             #update files in: /versions/updates
+        if c == 'update beta':
+            os.system('python updater/update_beta.py')
+            #update files in: /versions/updates/beta
     except:
         print(tc.colored(f'{c}: Error while running', 'red'))
