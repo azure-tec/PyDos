@@ -45,11 +45,14 @@ while True:
             print(f'Running {s[1]}')
             os.system(s[1])
         if c == 'info':
-            print('Build#: 5302')
-            print('Version: 1.0.0a')
+            print('Build#: 4792')
+            print('Version: 1.0.1')
         if c == 'gui':
             os.system('python gui/gui.py')
         if c == 'app':
             os.system(f'python apps/{s[1]}/{s[1]}.py')
+        if c == 'update':
+            os.system('python updater/update.py')
+            #update files in: /versions/updates
     except:
         print(tc.colored(f'{c}: Error while running', 'red'))
