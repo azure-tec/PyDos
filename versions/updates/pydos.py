@@ -50,12 +50,13 @@ while True:
         if c == 'gui':
             os.system('python gui/gui.py')
         if c == 'app':
-            os.system(f'python apps/{s[1]}/{s[1]}.py')
+            os.system(f'python apps/reg/{s[1]}/{s[1]}.py')
         if c == 'update':
             os.system('python updater/update.py')
             #update files in: /versions/updates
         if c == 'update beta':
             os.system('python updater/update_beta.py')
-            #update files in: /versions/updates/beta
-    except:
+            #update files in: /versions/updates/beta7
+        if c == 'install':
+            os.system(f'python apps/install/install.py {s[1]}')
         print(tc.colored(f'{c}: Error while running', 'red'))
